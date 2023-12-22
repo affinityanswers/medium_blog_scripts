@@ -8,7 +8,7 @@ SpreadsheetApp.getUi()
 
 // Function to get the emails in Google Sheet
 function getEmailsAndWriteToSpreadsheet() {
-  var targetDomain = 'dsr-incogni.com';
+  var targetDomain = 'domainName';
 
   // Log in to Gmail
   var gmailApp = GmailApp;
@@ -16,8 +16,8 @@ function getEmailsAndWriteToSpreadsheet() {
 
 
   // Create a new Google Sheet or use an existing one
-  var spreadsheet = SpreadsheetApp.openById('15FQFkGTlojpxAyV3RH_Dwi92IvDKrOphw8eypesZXZg');
-  var sheet = spreadsheet.getSheetByName('Log&Status_dsr-incongni'); // Change the sheet name as needed
+  var spreadsheet = SpreadsheetApp.openById('sheetID');
+  var sheet = spreadsheet.getSheetByName('sheetName'); // Change the sheet name as needed
 
 
   // Get the list of processed message IDs from Script Properties
